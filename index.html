@@ -33,14 +33,46 @@
         section div {
           margin: 20px 0px 0px;
         }
+        #picContainer {
+          position: relative;          
+        }
+        .home-phones {
+          left: 0px;
+          bottom: 46px;
+          width: 318px;
+          height: 510px;
+          margin-left: 4px;
+          background: url(http://d36xtkk24g8jdx.cloudfront.net/bluebar/b05105e/images/homepage/home-phones.png) 0px 0px no-repeat;
+        }
+
+        #iphone-overlay {
+          position: absolute;
+          top: 79px;
+          left: 117px;
+        }
+
+        #iphone-overlay img {
+          position: absolute;
+          z-index: 10;
+          width: 200px;
+        }
       </style>
     </head>
     <body>
+
       <div class='container' id='mainContainer'>
 
         <div class='row'>
 
-          <div id='mainDescription' class='col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-7'>
+          <div id='picContainer' class='col-xs-1 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2'>
+            <div class='home-phones hidden-xs'>
+              <div id='iphone-overlay'>
+                <img src="//d36xtkk24g8jdx.cloudfront.net/bluebar/b05105e/images/homepage/screenshot1.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div id='mainDescription' class='col-xs-10 col-sm-5 col-md-4 col-lg-4'>
             <header>
               <h1>Be Less Busy.</h1>
             </header>
